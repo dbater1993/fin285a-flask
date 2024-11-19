@@ -1,0 +1,42 @@
+/* static/styles.css */
+body {
+    background-color: #002451; /* Tomorrow Night Sky theme */
+    color: #ffffff; /* White text for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff; /* White for headers */
+    text-align: center;
+}
+
+p {
+    color: #c0c5ce; /* Soft gray for paragraphs */
+    text-align: center;
+}
+
+a {
+    color: #4db5bd; /* Soft cyan color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #58a6ff; /* Change color on hover for links */
+}
+
+button {
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center !important;
+}
+
+button:hover {
+    background-color: #005f99;
+}
