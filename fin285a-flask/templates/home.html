@@ -4,12 +4,16 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dave + Ben's portfolio tracker</title>
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <h1>Dave + Ben's portfolio tracker</h1>
-    <p>This background is Tomorrow Night Blue.</p>
-    <button>5005135</button>
+    <a href="/about">Who we are</a>
+    <p>This is a web application that can be used to forecast VaR, ES and other cool stuff.</p>
+    <a href="https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model#/media/File:Stockpricesimulation.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Stockpricesimulation.jpg/1280px-Stockpricesimulation.jpg" 
+        alt="B-S model" style="width: 600px; height: auto;">
+    </a>
+    <button>run simulation</button>
 </body>
 </html>

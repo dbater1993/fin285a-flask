@@ -1,0 +1,23 @@
+import yfinance as yf
+import matplotlib.pyplot as plt
+import mplcursors
+
+ticker = input("Enter the ticker symbol ").upper()
+
+data = yf.Ticker(ticker).history(period="5y")
+
+data['Daily Return'] = data['Close'].pct_change()
+
+data = data.dropna()
+
+fig, ax = plt.subplots(figsize=(10, 6))
+scatter = ax.scatter(data.index, data['Daily Return'], c='blue', alpha=0.6, label=f"{ticker} Daily Returns")
+ax.axhline(0, color='red', linestyle='--', linewidth=0.8)
+ax.set_title(f"Daily Returns for {ticker} (Last 5 Years)")
+ax.set_xlabel("Date")
+ax.set_ylabel("Daily Return")
+ax.legend()
+ax.grid(True)
+mplcursors.cursor(scatter, hover=True)
+plt.tight_layout()
+plt.show()

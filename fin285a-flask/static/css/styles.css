@@ -1,0 +1,69 @@
+/* static/styles.css */
+body {
+    background-color: #002451; /* Tomorrow Night Sky theme */
+    color: #ffffff; /* White text for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure content is vertically centered */
+}
+
+h1 {
+    color: #ffffff; /* White for headers */
+    margin: 20px 0; /* Add spacing around headers */
+}
+h2 {
+    color: #c0c5ce; /* Soft gray for paragraphs */
+    margin: 20px 0; /* Add spacing around headers */
+}
+p {
+    color: #c0c5ce; /* Soft gray for paragraphs */
+    margin: 20px 0; /* Add spacing around paragraphs */
+}
+
+a {
+    color: #4db5bd; /* Soft cyan color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #58a6ff; /* Change color on hover for links */
+}
+
+a:focus {
+    outline: 2px solid #58a6ff; /* Focus state for accessibility */
+}
+
+button {
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center !important;
+    margin: 20px 0; /* Add spacing below buttons */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 200px; /* Restrict button width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+}
+
+button:hover {
+    background-color: #005f99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+button:focus {
+    outline: 2px solid #58a6ff; /* Focus state for accessibility */
+}
+
+img {
+    max-width: 90%; /* Ensure the image scales responsively */
+    height: auto;
+    margin-bottom: 20px; /* Space below the image */
+}
